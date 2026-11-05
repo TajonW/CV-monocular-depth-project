@@ -26,3 +26,19 @@ __pycache__/
 # 本地环境变量
 .env
 .env.*
+
+# Downloaded assignment and external repositories
+docs/assignment/
+/Project_3__Monocular_Metric_Depth_Estimation_and_Video_Consistency.pdf
+external/
+
+# Additional model formats and local tooling
+*.onnx
+*.engine
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini

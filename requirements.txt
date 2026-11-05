@@ -1,0 +1,6 @@
+# Initial CPU stereo dependencies; versions will be locked after environment verification.
+# Model-specific dependencies and PyTorch are not included yet.
+numpy
+opencv-python
+matplotlib
+PyYAML
