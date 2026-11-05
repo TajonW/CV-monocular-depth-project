@@ -1,0 +1,28 @@
+# 数据集
+*.zip
+*.mat
+data/
+datasets/
+
+# 模型权重
+checkpoints/
+weights/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# 临时文件与运行结果
+tmp/
+outputs/
+runs/
+
+# Python 环境与缓存
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# 本地环境变量
+.env
+.env.*
