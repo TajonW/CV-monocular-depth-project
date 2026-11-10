@@ -15,8 +15,8 @@ AIAA 3201 Introduction to Computer Vision Course Project.
 
 ## Environment Setup
 
-The repository currently contains the project structure and prepared Middlebury
-data. Inference and evaluation scripts have not been implemented yet.
+The CPU Middlebury stereo baseline is implemented and evaluated on all 15
+trainingQ scenes. The dataset and full outputs are local-only.
 
 Use a dedicated Python environment. The initial CPU stereo dependencies are:
 
@@ -66,9 +66,9 @@ Paths below are relative to the repository root.
 
 ### Middlebury
 
-Original archives are kept in `data/downloads/`. Both archives are extracted
-into `data/middlebury/`, giving 15 required scene folders under
-`data/middlebury/MiddEval3/trainingQ/`.
+Place the 15 scene folders under `data/middlebury/MiddEval3/trainingQ/`.
+Reuse an existing verified trainingQ copy if available. The source archives
+can be stored in `data/downloads/`.
 
 Each required scene has `im0.png`, `im1.png`, `calib.txt`, and `disp0GT.pfm`.
 The actual archive directory is named **trainingQ**, although the assignment
@@ -101,20 +101,36 @@ inference is implemented.
 
 ## How to Run
 
-Runnable project commands will be added alongside the corresponding scripts.
-The current directories contain implementation notes, not completed algorithms.
+### Part 1 stereo baseline (CPU)
 
-Start with Part 1: load the Adirondack stereo pair, compute disparity, convert
-it to metric depth, and evaluate against its PFM ground truth. Then process all
-15 trainingQ scenes and implement the frame-wise video baseline.
+Run from the repository root with the Middlebury inputs in place. In the
+existing `cvproject3` environment:
+
+```powershell
+conda activate cvproject3
+python -m pip install -r requirements.txt
+# Reproduce the old single-scene result (1.2389 px MAE, 83.03% coverage).
+python -m src.stereo.run_stereo --scene Adirondack --legacy-positive-only
+# Run all 15 scenes with the course protocol.
+python -m src.stereo.run_stereo
+```
+
+The runner loads `configs/stereo.yaml` and writes the batch table and scene
+outputs to `outputs/stereo/`. The legacy comparison writes separately to
+`outputs/stereo/legacy_positive/`. The measured Python and package versions
+are in the [experiment log](docs/experiment_log.md).
+
+The frame-wise video baseline is pending.
 
 ## Results
 
-No experiments have been run yet. Keep complete predictions in `outputs/` and
-copy only selected figures and tables into `results/`.
+The 15-scene CPU stereo run averaged **1.9743 px MAE**, **75.98% coverage**,
+and **22.13 ms per pair** with equal weight per scene. Timing covers one
+`matcher.compute` call per scene. See the [per-scene table](results/tables/middlebury_stereo.csv)
+and the [representative figures](results/README.md).
 
-See [the evaluation protocol](docs/evaluation_protocol.md) and
-[the experiment log](docs/experiment_log.md) before recording results.
+The [evaluation protocol](docs/evaluation_protocol.md) and
+[experiment log](docs/experiment_log.md) document the masks and legacy comparison.
 
 ## Submission
 
@@ -137,4 +153,3 @@ Record the exact commit and checkpoint for each external model used.
 
 The full report bibliography will include the assigned readings, datasets,
 models, and any borrowed implementation components.
-

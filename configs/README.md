@@ -1,5 +1,5 @@
 # Experiment configurations
 
-`stereo.yaml` records initial StereoSGBM settings. No script consumes this file
-yet. When implementing inference, load it explicitly and save the resolved
-settings with every run. Model-specific configurations will be added later.
+`stereo.yaml` is the default configuration for `python -m src.stereo.run_stereo`.
+It explicitly sets the validated CPU SGBM parameters. Each scene's
+`metrics.json` records the resolved OpenCV arguments, including its search range.

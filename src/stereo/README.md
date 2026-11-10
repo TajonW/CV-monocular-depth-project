@@ -1,13 +1,15 @@
 # Part 1: Stereo geometry
 
-Implement `run_stereo.py` and `evaluate_stereo.py` here.
-Start with Adirondack, then process all 15 trainingQ scenes.
+Run `python -m src.stereo.run_stereo` from the repository root to process all
+15 quarter-resolution Middlebury trainingQ scenes. Use `--scene Adirondack`
+to run only that scene and `--legacy-positive-only` to reproduce the old
+positive-only prediction mask.
 
-- Read im0.png, im1.png, calib.txt, and disp0GT.pfm.
-- Compute OpenCV StereoSGBM disparity and divide the fixed-point result by 16.
-- Use quarter-resolution calibration without scaling it again.
-- Convert to meters: Z = f * baseline / (disparity + doffs) / 1000.
-- Keep an explicit invalid prediction mask and floating-point outputs.
-- Report disparity MAE, coverage, and runtime.
+The runner uses the native calibration, converts OpenCV fixed-point disparity
+to pixels, and converts positive denominators to metric depth with
+`Z = f * baseline / (disparity + doffs) / 1000`. Full outputs include the raw
+fixed-point prediction, masked floating-point disparity and depth, invalid
+mask, metrics and overview. The batch CSV includes an equal-weight scene mean.
 
-See `docs/evaluation_protocol.md` for mask and aggregation rules.
+See [the evaluation protocol](../../docs/evaluation_protocol.md) for masks and
+[the project README](../../README.md#part-1-stereo-baseline-cpu) for setup.

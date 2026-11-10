@@ -9,8 +9,9 @@ the local `docs/assignment/` folder for the authoritative requirements.
 - Keep the native image size and corresponding calibration.
 - Convert OpenCV fixed-point disparity to pixels by dividing by 16.
 - Ground-truth validity: finite disparity strictly greater than zero.
-- Proposed prediction validity: finite disparity with raw OpenCV disparity
-  strictly greater than `(minDisparity - 1) * 16`.
+- Prediction validity: finite disparity with raw OpenCV disparity strictly
+  greater than `(minDisparity - 1) * 16`. Include non-sentinel zero disparity
+  in the formal run. The legacy reproduction additionally requires `d > 0`.
 - Compute MAE on the intersection of valid ground truth and valid predictions.
 - Coverage is the number of pixels in that intersection divided by the number
   of valid ground-truth pixels. Report both MAE and coverage.
