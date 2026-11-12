@@ -1,0 +1,38 @@
+{
+  "frames_verified": 70,
+  "frame_indices": [
+    0,
+    69
+  ],
+  "fps": 24.0,
+  "duration_s": 2.9166666666666665,
+  "decoded_video_frames": 70,
+  "all_saved_rgb_match_source_in_order": true,
+  "input_has_more_frames_after_prefix": false,
+  "raw_prediction_dtype": "float32",
+  "raw_pixels_verified": 36288000,
+  "all_predictions_finite": true,
+  "exact_clip_wide_normalization": true,
+  "exact_color_pngs_and_comparison_pngs": true,
+  "normalization_minimum": 0.0,
+  "normalization_maximum": 3.818237781524658,
+  "video_files_checked": {
+    "rgb_relative_depth.mp4": {
+      "decoded_frames": 70,
+      "fps": 24.0,
+      "mean_lossy_pixel_error": 2.165559455567695,
+      "max_frame_lossy_pixel_error": 2.3144853006765165,
+      "sha256": "98be0322e17cca47b05886a7bc600c0c63dc1e9fa9b9fd21ced4bca8c378f922"
+    },
+    "rgb_relative_depth_h264.mp4": {
+      "decoded_frames": 70,
+      "fps": 24.0,
+      "mean_lossy_pixel_error": 1.9757145648854044,
+      "max_frame_lossy_pixel_error": 2.436357703882105,
+      "sha256": "ad8f4b4af122b1d60b2d9383e4436220fcbb937804bd25114e61a37efcf36f43"
+    }
+  },
+  "code_input_and_checkpoint_hashes_match": true,
+  "course_100_frames_completed": false,
+  "units": "relative depth; not meters"
+}

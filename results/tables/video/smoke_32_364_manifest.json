@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-11-11T17:13:28.877835+08:00",
+  "config": {
+    "video_path": "data/videos/davis_rollercoaster.mp4",
+    "repository": "external/Video-Depth-Anything",
+    "checkpoint": "checkpoints/video_depth_anything_vits.pth",
+    "output_dir": "outputs/video",
+    "max_frames": 32,
+    "encoder": "vits",
+    "input_size": 364,
+    "max_res": 640,
+    "precision": "fp16",
+    "opencv_threads": 1
+  },
+  "argv": [
+    "D:\\Course\\CV_Project\\src\\video\\run_video.py",
+    "--run-name",
+    "smoke_32_364",
+    "--max-frames",
+    "32",
+    "--input-size",
+    "364"
+  ],
+  "python": "3.11.18 | packaged by Anaconda, Inc. | (main, Oct 26 2026, 18:13:29) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Users\\13822\\anaconda3\\envs\\cv_project\\python.exe",
+  "official_git_commit": "4f5ae23172ba60fd7bc11ef671cca678842c7072",
+  "official_tracked_files_dirty": false,
+  "official_code_sha256": {
+    "video_depth_anything\\dinov2.py": "0505cf78bf0c88b97964cf973f34ab7e5574b7b63469d65abe55a7576bc8bb55",
+    "video_depth_anything\\dinov2_layers\\__init__.py": "c4a3e70c63d8c6c8c9e0c1b9e0eae5672ff73176146b7d2b10d36ae4974fa6d6",
+    "video_depth_anything\\dinov2_layers\\attention.py": "7b049ddbb65b9421e56645f5ca6f5edc0cc6739b6b1331f60883d6f4f2925c46",
+    "video_depth_anything\\dinov2_layers\\block.py": "a7218ff8350794efce37a010ac7d58d212e10a5b84b43a214a7b682cac656a62",
+    "video_depth_anything\\dinov2_layers\\drop_path.py": "27abed4dd9dafa14157c9c7717bdca15fedb62702066f627b314bc91c06a1d53",
+    "video_depth_anything\\dinov2_layers\\layer_scale.py": "a79f5b673c3f1fa60173b1905501ecfeb7fe77bed9b5e35881390c12baecbdfa",
+    "video_depth_anything\\dinov2_layers\\mlp.py": "9856d7274ca32428ff05dacf7adf8ad10fa81d7bb4e5d299ab57cf421dcc7620",
+    "video_depth_anything\\dinov2_layers\\patch_embed.py": "2d949ea0eff33185d829995373c963cac6eaebf77b4808478a72934d89587e42",
+    "video_depth_anything\\dinov2_layers\\swiglu_ffn.py": "e1744aa9d29610c57d4fa153ec0aa545ef60da565d2aaac754d318fea0e30d7c",
+    "video_depth_anything\\dpt.py": "952c5ad29b556aa3875ad34425bd0e5a582c4b58a8a35820e4ba1f5b7df62975",
+    "video_depth_anything\\dpt_temporal.py": "761d6bf322316d7c16d12ca7be4821c97adb781da340efc43e5676dbe5ceaaef",
+    "video_depth_anything\\motion_module\\attention.py": "33f883603b5bb30eff19d41362bc976f2816224466486cb069d99f7b9d232f35",
+    "video_depth_anything\\motion_module\\motion_module.py": "9bafdc728e0ed39eedd91d040b2fea94064eb72edea376e50008d4377c1a34c6",
+    "video_depth_anything\\util\\blocks.py": "35ac061b11de0dd6d556e5b72a386897088f4608b23581a37b0601bc4bd5f1c1",
+    "video_depth_anything\\util\\transform.py": "ad93afd07aee97a1c73aaa9217c1a8e80c097a861800c56e5425446ff3ecabaa",
+    "video_depth_anything\\video_depth.py": "7fff2b48bb725650f34166d2f86d074d7a5b76c564c290fa5286d8b420f6491c",
+    "video_depth_anything\\video_depth_stream.py": "f09cb01dcf41cc476e8fee94c545d42f96c58348d450b05d624da45310c677da",
+    "utils\\dc_utils.py": "a2e4695d83d33c45d28690ec7ac9a3dafcfdc49b602562f7dd77a7f20fbeaded",
+    "utils\\util.py": "e3dc04ebf17684fd1cde22e763c39f763f0be7e50626537902e97e8c52b59496"
+  },
+  "project_code_sha256": {
+    "src\\video\\__init__.py": "719d1001115412d787f6ff97ad31dbebe23caf5fb1137dc1819aed8a3261d3cb",
+    "src\\video\\run_video.py": "5ebb3ef63606483a57537f20111f9b34e82bcb9b45da9ee8d705580d16d6700b",
+    "src\\video\\visualization.py": "087f588eef07f3237914b243c15d78463e7965a37fd0bde8bfde4352e8f2b576"
+  },
+  "packages": {
+    "torch": "2.7.1+cu126",
+    "torchvision": "0.22.1+cu126",
+    "numpy": "2.4.6",
+    "opencv-python": "5.0.0.93",
+    "matplotlib": "3.11.2",
+    "PyYAML": "6.0.3",
+    "einops": "0.8.2",
+    "easydict": "1.14",
+    "tqdm": "4.70.1",
+    "imageio": "2.38.1",
+    "imageio-ffmpeg": "0.8.1"
+  },
+  "checkpoint_sha256": "13379300b739e659f076a59d52e9801bd8d38c541a7e71f73bbca4dcfb013609",
+  "input_video_sha256": "7268cbecd9806a1e90a416de50dc02e50b4ae01428d5971837cf679dd0c87cb8",
+  "source": {
+    "fps": 24.0,
+    "reported_frame_count": 70,
+    "decoder": "FFMPEG",
+    "requested_frames": 32,
+    "height": 540,
+    "width": 960
+  },
+  "decoder": "OpenCV",
+  "read_resolution": [
+    360,
+    640
+  ],
+  "fp16_policy": "Official CUDA autocast; FP32 weights and returned arrays",
+  "colormap_adaptation": "Project save_video uses matplotlib.colormaps['inferno'].colors; unchanged official 255-index lookup",
+  "ffmpeg_executable": "C:\\Users\\13822\\anaconda3\\envs\\cv_project\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v9.0.2.exe",
+  "ffmpeg_version": "9.0.2-essentials_build-www.gyan.dev"
+}

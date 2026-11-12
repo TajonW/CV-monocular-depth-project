@@ -1,0 +1,142 @@
+{
+  "created_at": "2026-11-06T09:49:52.841537+08:00",
+  "command": [
+    "D:\\Course\\CV_Project\\src\\stereo\\run_stereo.py",
+    "--config",
+    "configs/stereo.yaml",
+    "--run-name",
+    "baseline"
+  ],
+  "python": "3.11.18 | packaged by Anaconda, Inc. | (main, Oct 26 2026, 18:13:29) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Users\\13822\\anaconda3\\envs\\cv_project\\python.exe",
+  "os": "Windows-10-10.0.26200-SP0",
+  "cpu": "Intel(R) Core(TM) i9-14900HX",
+  "opencv_threads": 1,
+  "packages": {
+    "numpy": "2.4.6",
+    "opencv-python": "5.0.0.93",
+    "matplotlib": "3.11.2",
+    "PyYAML": "6.0.3"
+  },
+  "git_commit": "cefa4bfd43038468685f128a150d7944c84c9e50",
+  "git_dirty": true,
+  "config": {
+    "dataset_root": "data/middlebury/MiddEval3/trainingQ",
+    "output_dir": "outputs/stereo",
+    "method": "StereoSGBM",
+    "grayscale": true,
+    "min_disparity": 0,
+    "num_disparities": "auto_from_calibration",
+    "block_size": 5,
+    "p1_factor": 8,
+    "p2_factor": 32,
+    "uniqueness_ratio": 10,
+    "speckle_window_size": 100,
+    "speckle_range": 2,
+    "disp12_max_diff": 1,
+    "pre_filter_cap": 31,
+    "mode": "SGBM",
+    "num_threads": 1,
+    "warmup_runs": 1,
+    "timing_repeats": 3
+  },
+  "input_sha256": {
+    "Adirondack": {
+      "im0.png": "edf9ae03c0bd3251a0d2a6e66a9cd570abad3472c3b5f6c3730becaf7176d896",
+      "im1.png": "13a9c20682787006b6b9afc9203e0fa8f178c3e85e0d066a835a79181c1410f5",
+      "calib.txt": "87374b6cbeb5802f1b6488bdaec08a08ed4d729f3b392e0bd975307764eac557",
+      "disp0GT.pfm": "265ee6a413c3335a821f9885f406de1a227158dd0ef9f970d247e5efdec296d6"
+    },
+    "ArtL": {
+      "im0.png": "a29a9a9289bbc6428342b6a7d0b5141efcb6dd5a0cb88cae618d80f1e088f9cc",
+      "im1.png": "b12a0833a4591ff775dd548f14af2a7e8d569084f25e8ec2ab913b84fc85237c",
+      "calib.txt": "ef734a74f2c513cfc689c5ebe9b371f04d750d062ab1690b4c284a32166824cf",
+      "disp0GT.pfm": "e0bb550d8cd4d2570413dfe74495f1d43a05026796ca4e1c4b65f195b3bad861"
+    },
+    "Jadeplant": {
+      "im0.png": "f8248440b1c3421e01343983a0724db70e64af32235e9d145d1c808615417a76",
+      "im1.png": "2d7691f7c177cbdf6728f1ddfacde845a2e4b24692f0b92d243dcd59d621f9f9",
+      "calib.txt": "7344b0bf4cd4ee185723942eb6bf8fe34667a0b2cebdf5a8351fe77ed0ea0813",
+      "disp0GT.pfm": "0228d78b98a2736c89e6620388b83e5a16d85d7bb64b22591a50e5edcd48d310"
+    },
+    "Motorcycle": {
+      "im0.png": "a7b3988b02447c190309b0503da3db036d0c6c0380c3b9b6acda3d66594f5312",
+      "im1.png": "9bb3c7fa53a27f003223b2fc504f86e1647f70cb2d25f3baedf3127957934a87",
+      "calib.txt": "d886e8f78085eb3a13f45e1a70a5fdbeb09a2a2091e364536269318d4ffa5e52",
+      "disp0GT.pfm": "b7c4557ec53314d97643f3e3f7c4098eb992aaab193937e03a7759b42dfa6f11"
+    },
+    "MotorcycleE": {
+      "im0.png": "a7b3988b02447c190309b0503da3db036d0c6c0380c3b9b6acda3d66594f5312",
+      "im1.png": "e86151aad3da99ea3e7be4a9c3269ded759e97824b448b2047d6da12797f8cc5",
+      "calib.txt": "d886e8f78085eb3a13f45e1a70a5fdbeb09a2a2091e364536269318d4ffa5e52",
+      "disp0GT.pfm": "b7c4557ec53314d97643f3e3f7c4098eb992aaab193937e03a7759b42dfa6f11"
+    },
+    "Piano": {
+      "im0.png": "22dee69c42fb2e7bab34415cfda2aa20b88032b6449a043ae793b5a7438e4c5d",
+      "im1.png": "fb8f47fb73d49bf5f8c3447c697b175286870860f77d57404b13b59f174dca68",
+      "calib.txt": "2be57753cbe419293560f5fb47575378b29c11ea9c2c59635d9c50f1cdae1b99",
+      "disp0GT.pfm": "eef5202a45a5cfd5fe016e97bd40cb30ac0be7832fab8d9c885c07d409994461"
+    },
+    "PianoL": {
+      "im0.png": "22dee69c42fb2e7bab34415cfda2aa20b88032b6449a043ae793b5a7438e4c5d",
+      "im1.png": "e0829b470a3f2d1466f3bdf7f81446c9fe5dc3a3604d44724c056d6f286816c0",
+      "calib.txt": "2be57753cbe419293560f5fb47575378b29c11ea9c2c59635d9c50f1cdae1b99",
+      "disp0GT.pfm": "eef5202a45a5cfd5fe016e97bd40cb30ac0be7832fab8d9c885c07d409994461"
+    },
+    "Pipes": {
+      "im0.png": "e891bc253b5a73a3c258fa571ef302f1f531ffcd59b505f7aa5760168a51fde1",
+      "im1.png": "26db33f99f5d448fd623bd5d6d61ac57c07a07b9ebad9d9aaf0bd2aa77ec8d4d",
+      "calib.txt": "6d57705f282b57ec56e475fb6ad46955256470d71d088d3283b1013ce2e62a60",
+      "disp0GT.pfm": "7c0fd88e4821cce0544d51c6c9925d0a73a558226289af27997572ca9fcd361b"
+    },
+    "Playroom": {
+      "im0.png": "8063ce1fef9c5cc36c9c61f3f22dee26e7287af9044df6fb0bfa6d4b3fde9d1e",
+      "im1.png": "54503fdcf6bc7f2af228756f6c6e35570e6f3003763c799aa9ddbdd34c9b1c0c",
+      "calib.txt": "d7b2f1e8e00dae0d1e576bf66b440509ba844dad7481a0b5ef23ea0747461caa",
+      "disp0GT.pfm": "8e39ebb0f392ca9c5a98638f71ab355a7b7eaea3a9a7c21d32e00e2d9e4165c9"
+    },
+    "Playtable": {
+      "im0.png": "81f7e1c5ab1543d038fa5907f0572c02cff23d6c061773f20da8918baeff6deb",
+      "im1.png": "bb355856d6f2056be9368d941968dbdb0dd84e3e5c79298acd4cec89d59add29",
+      "calib.txt": "9ea58e552710bb730b2968c7373162663bc3e1d3a4d267beb8cbfc5b7cb6ba18",
+      "disp0GT.pfm": "d0cc802ecdbdbf56a1356087b5d963c771176ebbcaa20e8cbe023befa7e95e80"
+    },
+    "PlaytableP": {
+      "im0.png": "e59c9db5a1fc3b19b4dbcb8a3c735f6119bcf5f6f148d39d4249ad81973a95e3",
+      "im1.png": "779213a6ee111e936cf44bd54e8b5d302a697cfcedd4a5e4d73ddaa326f9f8c2",
+      "calib.txt": "a789f540c408802f3d6d469ff4e6894561105e2d2cd24a86172490173ef13a4e",
+      "disp0GT.pfm": "197f58b51ce80acbd53680948d3b4cb36f1671fcf40488cb61f239550179036b"
+    },
+    "Recycle": {
+      "im0.png": "63076e5c00650431e0d1e0ff6765f7f7f4be3e85966e9e09a111e68e2f2fc6fd",
+      "im1.png": "e75e3fcdf19b13b02ad3278d40e42e4e6800be2b9dbd69a03ab3f498cc44baec",
+      "calib.txt": "2e7a875a6e20667be1d7155cec741aa48151bd5fb10ba62917a6186451004201",
+      "disp0GT.pfm": "cf755541547336db621fa073925e01ad8baec931ff44995ac19d0081a4effd16"
+    },
+    "Shelves": {
+      "im0.png": "ec20b8b4f1334d5a7167fe214ca32207b3cf5a490e0a68c92ee4672225e521f5",
+      "im1.png": "76095d15bb1173334d6cd4374cf54cf195033ae68a453392b0717d79b50cfd77",
+      "calib.txt": "d202fb16fb03a377e3179b2da77a605a2a896464425223dc92523552fd8c0608",
+      "disp0GT.pfm": "afec37afab28de8542cf5dc14611210ff920c40a0a0f409ecdcc40ae77205ae5"
+    },
+    "Teddy": {
+      "im0.png": "0620f5cb513ca67aaaf3702c0b1e261641d67171ad56fa0934ca4cede638b023",
+      "im1.png": "2c377edb3c2144f32c56c4c969ec5dcb6b6bf02db9c95e21d24e70ac5fe6b350",
+      "calib.txt": "25c523c597aa84679f09e19f9cc79d899a4172ca40dc7b33314d7a9a752e25bc",
+      "disp0GT.pfm": "895744a0bed14c428b98a8aeba63053f4b52279ba8284ecf9d15fa045444217e"
+    },
+    "Vintage": {
+      "im0.png": "7042ff4a715e683ee57a7cf42caec57121a0fab68f86440f2014b5c8685864c5",
+      "im1.png": "faeed68e7ecf395702b6bc99094d42a4db4163d0b7a77dbcbb1452c9cdff8b7d",
+      "calib.txt": "f9840cc430cab9192a1a8e7a713ab20199c3446a090b0710fd24c626b2ad6c81",
+      "disp0GT.pfm": "203b5ffd69a7d997e6666dd03dd91d9df8f0af20e85c44559d96ea8043cebf91"
+    }
+  },
+  "code_sha256": {
+    "src\\stereo\\__init__.py": "65b99d588a8c7ffd7130bc1c3b1d582109b4f577f4f6a0fad3302eff9b958ac2",
+    "src\\stereo\\core.py": "af849316c92ab50241401aed2f24b8df3d95532c9590311050c05db153344d05",
+    "src\\stereo\\evaluate_stereo.py": "97b6ffa7bb1e1d8354f8b3e6393fcaa0dd5d1355ac15fbdef9844c74787b21f7",
+    "src\\stereo\\run_stereo.py": "b64e3b3b66eb07cd695803ec2ae412439d550f405bddfd0929c9bbfd78cf251d",
+    "src\\stereo\\visualization.py": "3ddd48a3375a4a991b9ee2fef4f47dab1834f999f2e81bae3261fdc456a7ccf2"
+  }
+}

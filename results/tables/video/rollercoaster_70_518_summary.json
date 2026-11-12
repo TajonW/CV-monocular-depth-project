@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "model": "Video Depth Anything-Small",
+  "mode": "offline relative depth",
+  "precision": "fp16 autocast",
+  "parameter_count": 29035137,
+  "frames_processed": 70,
+  "frame_indices": [
+    0,
+    69
+  ],
+  "fps": 24.0,
+  "duration_s": 2.9166666666666665,
+  "raw_shape": [
+    70,
+    360,
+    640
+  ],
+  "raw_dtype": "float32",
+  "original_resolution": [
+    540,
+    960
+  ],
+  "read_resolution": [
+    360,
+    640
+  ],
+  "input_size": 518,
+  "max_res": 640,
+  "windows": [
+    {
+      "input_shape": [
+        1,
+        32,
+        3,
+        518,
+        924
+      ],
+      "input_dtype": "torch.float32",
+      "forward_ms": 13958.917300000394,
+      "output_dtype": "torch.float32"
+    },
+    {
+      "input_shape": [
+        1,
+        32,
+        3,
+        518,
+        924
+      ],
+      "input_dtype": "torch.float32",
+      "forward_ms": 13140.246099999786,
+      "output_dtype": "torch.float32"
+    },
+    {
+      "input_shape": [
+        1,
+        32,
+        3,
+        518,
+        924
+      ],
+      "input_dtype": "torch.float32",
+      "forward_ms": 13100.83609999856,
+      "output_dtype": "torch.float32"
+    },
+    {
+      "input_shape": [
+        1,
+        32,
+        3,
+        518,
+        924
+      ],
+      "input_dtype": "torch.float32",
+      "forward_ms": 13033.898899997439,
+      "output_dtype": "torch.float32"
+    }
+  ],
+  "official_internal_tail_padding": 28,
+  "padding_note": "Official window-context padding only; returned output contains exactly the real requested prefix",
+  "pipeline_total_ms": 55306.119200002286,
+  "amortized_pipeline_ms_per_real_frame": 790.0874171428898,
+  "timing_scope": "Synchronized full official infer_video_depth: preprocessing, transfers, forwards, output resize, window alignment. Excludes decode, model load, visualization and file writes.",
+  "warmup_runs": 0,
+  "benchmark_note": "Cold offline clip run without warm-up; not a steady-state speed benchmark",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "physical_total_mib": 8187.5,
+    "peak_allocated_mib": 8014.21923828125,
+    "peak_reserved_mib": 11858.0
+  },
+  "all_predictions_finite": true,
+  "all_source_rgb_match_in_order": true,
+  "raw_npz_exact_roundtrip": true,
+  "normalization": {
+    "palette": "inferno",
+    "minimum": 0.0,
+    "maximum": 7.4338297843933105,
+    "frame_count": 70,
+    "scope": "entire processed prefix",
+    "mode": "global_minmax",
+    "units": "relative; not meters",
+    "lookup": "official floor(normalized * 255) into 256-color table"
+  },
+  "videos": {
+    "relative_depth.mp4": {
+      "frames": 70,
+      "fps": 24.0,
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "e6f7b3391535e39d6104ded24f5965f89a43130133c53e11f17c541f0f349e85"
+    },
+    "rgb_relative_depth.mp4": {
+      "frames": 70,
+      "fps": 24.0,
+      "size": [
+        408,
+        1292
+      ],
+      "sha256": "f14a7f76f7d6d3e2b18084ae711e97b39ff569dfa09b870f60f8879a8df868d7"
+    }
+  },
+  "course_100_frames_completed": false,
+  "scope": "All 70 available source frames processed; temporal-quality comparison and metric accuracy not evaluated",
+  "metadata_note": "Scope labels corrected after successful run and source-EOF verification; original executed source snapshot and all numeric metrics preserved"
+}

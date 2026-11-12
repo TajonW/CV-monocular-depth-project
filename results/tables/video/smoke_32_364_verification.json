@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "frames_verified": 32,
+  "raw_pixels_verified": 7372800,
+  "all_source_rgb_match_in_order": true,
+  "raw_float32_finite_nonnegative": true,
+  "clip_wide_normalization_exact": true,
+  "new_api_matches_official_color_lookup_exactly": true,
+  "input_checkpoint_official_code_and_snapshot_hashes_match": true,
+  "forward_windows_recorded": 2,
+  "videos": {
+    "relative_depth.mp4": {
+      "frames": 32,
+      "fps": 24.0,
+      "mean_lossy_pixel_error": 2.635080249927662
+    },
+    "rgb_relative_depth.mp4": {
+      "frames": 32,
+      "fps": 24.0,
+      "mean_lossy_pixel_error": 2.517088845825998
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "frames": [
+    64,
+    69
+  ],
+  "seeds": 18,
+  "valid_rgb_tracks": 18,
+  "primary_feature_id": 0,
+  "primary_selection": "First surviving RGB corner-strength candidate; no depth-based selection",
+  "forward_backward_limit_px": 1.0,
+  "lk_patch_error_limit": 20.0,
+  "normalized_values": [
+    {
+      "feature_id": 0,
+      "frame_index": 64,
+      "x": 585.0,
+      "y": 347.0,
+      "da2_normalized": 0.026272928342223167,
+      "vda_normalized": 0.0589478462934494,
+      "max_forward_backward_px": 0.005018634255975485,
+      "primary": true
+    },
+    {
+      "feature_id": 0,
+      "frame_index": 65,
+      "x": 580.7108154296875,
+      "y": 338.615966796875,
+      "da2_normalized": 0.03688465431332588,
+      "vda_normalized": 0.06223547086119652,
+      "max_forward_backward_px": 0.005018634255975485,
+      "primary": true
+    },
+    {
+      "feature_id": 0,
+      "frame_index": 66,
+      "x": 576.6213989257812,
+      "y": 330.2560119628906,
+      "da2_normalized": 0.04461684077978134,
+      "vda_normalized": 0.06279273331165314,
+      "max_forward_backward_px": 0.005018634255975485,
+      "primary": true
+    },
+    {
+      "feature_id": 0,
+      "frame_index": 67,
+      "x": 573.3533935546875,
+      "y": 322.901123046875,
+      "da2_normalized": 0.06103191524744034,
+      "vda_normalized": 0.05898502469062805,
+      "max_forward_backward_px": 0.005018634255975485,
+      "primary": true
+    },
+    {
+      "feature_id": 0,
+      "frame_index": 68,
+      "x": 570.2843627929688,
+      "y": 314.3373107910156,
+      "da2_normalized": 0.05506156012415886,
+      "vda_normalized": 0.05586967244744301,
+      "max_forward_backward_px": 0.005018634255975485,
+      "primary": true
+    },
+    {
+      "feature_id": 0,
+      "frame_index": 69,
+      "x": 567.1965942382812,
+      "y": 306.2107238769531,
+      "da2_normalized": 0.04790618270635605,
+      "vda_normalized": 0.057235170155763626,
+      "max_forward_backward_px": 0.005018634255975485,
+      "primary": true
+    }
+  ],
+  "interpretation": "A tracked display-value example, not metric depth accuracy or a global temporal-error score",
+  "all_track_ranges": [
+    {
+      "feature_id": 0,
+      "da2_range": 0.03475898690521717,
+      "vda_range": 0.006923060864210129
+    },
+    {
+      "feature_id": 1,
+      "da2_range": 0.0151286656036973,
+      "vda_range": 0.01741407485678792
+    },
+    {
+      "feature_id": 2,
+      "da2_range": 0.020077687688171864,
+      "vda_range": 0.002481900155544281
+    },
+    {
+      "feature_id": 3,
+      "da2_range": 0.012563880532979965,
+      "vda_range": 0.0025260131806135178
+    },
+    {
+      "feature_id": 4,
+      "da2_range": 0.031220562756061554,
+      "vda_range": 0.015152078121900558
+    },
+    {
+      "feature_id": 5,
+      "da2_range": 0.034009043127298355,
+      "vda_range": 0.008043728768825531
+    },
+    {
+      "feature_id": 6,
+      "da2_range": 0.03651990368962288,
+      "vda_range": 0.020785029977560043
+    },
+    {
+      "feature_id": 7,
+      "da2_range": 0.032463137060403824,
+      "vda_range": 0.006648741662502289
+    },
+    {
+      "feature_id": 8,
+      "da2_range": 0.03559669479727745,
+      "vda_range": 0.009326353669166565
+    },
+    {
+      "feature_id": 9,
+      "da2_range": 0.029811974614858627,
+      "vda_range": 0.009059339761734009
+    },
+    {
+      "feature_id": 10,
+      "da2_range": 0.02949542924761772,
+      "vda_range": 0.003296978771686554
+    },
+    {
+      "feature_id": 11,
+      "da2_range": 0.036797426640987396,
+      "vda_range": 0.006325773894786835
+    },
+    {
+      "feature_id": 12,
+      "da2_range": 0.033492790535092354,
+      "vda_range": 0.002629019320011139
+    },
+    {
+      "feature_id": 13,
+      "da2_range": 0.038068752735853195,
+      "vda_range": 0.013131417334079742
+    },
+    {
+      "feature_id": 14,
+      "da2_range": 0.035339443013072014,
+      "vda_range": 0.015753459185361862
+    },
+    {
+      "feature_id": 15,
+      "da2_range": 0.032345425337553024,
+      "vda_range": 0.009842157363891602
+    },
+    {
+      "feature_id": 16,
+      "da2_range": 0.03235556557774544,
+      "vda_range": 0.007530078291893005
+    },
+    {
+      "feature_id": 17,
+      "da2_range": 0.03310445882380009,
+      "vda_range": 0.003414459526538849
+    }
+  ],
+  "vda_smaller_display_range_count": 17,
+  "limitation": "One spatially clustered ROI and six frames, arbitrary method-specific relative scales; no independent-scene sample or GT depth/pose. True depth changes cannot be separated from prediction variation."
+}

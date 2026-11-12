@@ -1,0 +1,16 @@
+# Part 1: independent Depth Anything V2-Small relative-depth predictions.
+# Safe default: verify only frame 0 before attempting the course video run.
+video_path: data/videos/davis_rollercoaster.mp4
+repository: external/Depth-Anything-V2
+checkpoint: checkpoints/depth_anything_v2_vits.pth
+output_dir: outputs/framewise
+max_frames: 1
+encoder: vits
+input_size: 518
+device: auto
+precision: fp32
+warmup_runs: 1
+opencv_threads: 1
+palette: inferno
+save_video: true
+publish_preview: true

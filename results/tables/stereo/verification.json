@@ -1,0 +1,13 @@
+{
+  "scene_runs_checked": 45,
+  "pixel_predictions_checked": 14241405,
+  "unit_tests_passed": 5,
+  "pfm_reference": "torchvision.datasets.utils._read_pfm",
+  "pfm_reference_scenes": 15,
+  "checks": [
+    "fixed-point decoding",
+    "invalid masks",
+    "metric depth and positive denominator",
+    "saved disparity metrics"
+  ]
+}

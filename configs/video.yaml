@@ -1,0 +1,13 @@
+# Offline Small relative-depth GPU smoke test, not the full available-clip run.
+video_path: data/videos/davis_rollercoaster.mp4
+repository: external/Video-Depth-Anything
+checkpoint: checkpoints/video_depth_anything_vits.pth
+output_dir: outputs/video
+max_frames: 32
+encoder: vits
+# 518 also completed, but had near-8-GiB allocation and >8-GiB reservation.
+# 364 verified with substantially more headroom on the RTX 4070 Laptop.
+input_size: 364
+max_res: 640
+precision: fp16
+opencv_threads: 1

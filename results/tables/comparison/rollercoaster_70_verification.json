@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "frames_verified": 70,
+  "fps": 24.0,
+  "duration_s": 2.9166666666666665,
+  "encoded_size": [
+    1944,
+    488
+  ],
+  "same_source_rgb_and_frame_order": true,
+  "source_has_more_frames": false,
+  "exact_lossless_comparison_pngs": true,
+  "normalization_matches_both_entire_raw_clips": true,
+  "both_methods_use_identical_color_lookup": true,
+  "inputs_and_source_snapshot_hashes_match": true,
+  "mean_lossy_pixel_error_by_panel": {
+    "rgb": 2.720149884259259,
+    "da2": 2.345032035383598,
+    "vda": 2.318320477843915
+  },
+  "video_sha256": "aad03bfd1a343fd8d45a32bdcbdc86e8ff40f910f93934af11d4b5b2c956f18a",
+  "interpretation": "Synchronized qualitative comparison; no accuracy conclusion"
+}

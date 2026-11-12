@@ -1,0 +1,85 @@
+{
+  "created_at": "2026-11-11T15:44:28.072130+08:00",
+  "argv": [
+    "D:\\Course\\CV_Project\\src\\monocular\\run_framewise.py",
+    "--run-name",
+    "first_frame",
+    "--max-frames",
+    "1"
+  ],
+  "config": {
+    "video_path": "data/videos/davis_rollercoaster.mp4",
+    "repository": "external/Depth-Anything-V2",
+    "checkpoint": "checkpoints/depth_anything_v2_vits.pth",
+    "output_dir": "outputs/framewise",
+    "max_frames": 1,
+    "encoder": "vits",
+    "input_size": 518,
+    "device": "auto",
+    "precision": "fp32",
+    "warmup_runs": 1,
+    "opencv_threads": 1,
+    "palette": "inferno",
+    "save_video": true,
+    "publish_preview": true
+  },
+  "python": "3.11.18 | packaged by Anaconda, Inc. | (main, Oct 26 2026, 18:13:29) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Users\\13822\\anaconda3\\envs\\cv_project\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.7.1+cu126",
+    "torchvision": "0.22.1+cu126",
+    "numpy": "2.4.6",
+    "opencv-python": "5.0.0.93",
+    "matplotlib": "3.11.2",
+    "PyYAML": "6.0.3"
+  },
+  "torch_cuda_runtime": "12.6",
+  "opencv_threads": 1,
+  "project_git_commit": "cefa4bfd43038468685f128a150d7944c84c9e50",
+  "project_git_dirty": true,
+  "official_repository": "external/Depth-Anything-V2",
+  "official_git_commit": "a561b849ebae10a6f5ef49e26c83cbbcd36c71bf",
+  "official_git_dirty": false,
+  "official_git_dirty_scope": "tracked files only; generated Python bytecode is not a code change",
+  "official_python_sha256": {
+    "depth_anything_v2\\dinov2.py": "0505cf78bf0c88b97964cf973f34ab7e5574b7b63469d65abe55a7576bc8bb55",
+    "depth_anything_v2\\dinov2_layers\\__init__.py": "c4a3e70c63d8c6c8c9e0c1b9e0eae5672ff73176146b7d2b10d36ae4974fa6d6",
+    "depth_anything_v2\\dinov2_layers\\attention.py": "7b049ddbb65b9421e56645f5ca6f5edc0cc6739b6b1331f60883d6f4f2925c46",
+    "depth_anything_v2\\dinov2_layers\\block.py": "a7218ff8350794efce37a010ac7d58d212e10a5b84b43a214a7b682cac656a62",
+    "depth_anything_v2\\dinov2_layers\\drop_path.py": "27abed4dd9dafa14157c9c7717bdca15fedb62702066f627b314bc91c06a1d53",
+    "depth_anything_v2\\dinov2_layers\\layer_scale.py": "a79f5b673c3f1fa60173b1905501ecfeb7fe77bed9b5e35881390c12baecbdfa",
+    "depth_anything_v2\\dinov2_layers\\mlp.py": "9856d7274ca32428ff05dacf7adf8ad10fa81d7bb4e5d299ab57cf421dcc7620",
+    "depth_anything_v2\\dinov2_layers\\patch_embed.py": "2d949ea0eff33185d829995373c963cac6eaebf77b4808478a72934d89587e42",
+    "depth_anything_v2\\dinov2_layers\\swiglu_ffn.py": "e1744aa9d29610c57d4fa153ec0aa545ef60da565d2aaac754d318fea0e30d7c",
+    "depth_anything_v2\\dpt.py": "1abe7fa5740204b8dae48d8032d6f1dee085211946a7643d6f59817698d1bb7d",
+    "depth_anything_v2\\util\\blocks.py": "3245bd6706b5946d7e0735f059ced4d9ad0c190cd33820908f78c6d8ff78eb85",
+    "depth_anything_v2\\util\\transform.py": "ad93afd07aee97a1c73aaa9217c1a8e80c097a861800c56e5425446ff3ecabaa"
+  },
+  "code_sha256": {
+    "src\\monocular\\__init__.py": "03459ca5bca405b3269ca068f0eaf50fe67f036398569a7a8db48d457c4b96e2",
+    "src\\monocular\\engine.py": "2e32072ec19ed6758c8ec94d8062faa8ea307e39c83ce4b6fdc805b8b7c7dc24",
+    "src\\monocular\\run_framewise.py": "c073d7bfce8392bcfbf994b16c2dcfcc258509521a288ccfd6c580aff7c8a204",
+    "src\\monocular\\visualization.py": "bc2a7741d3b47d4586da7f97e9bbaaca116769be1ac05e215747ca4dafe25181"
+  },
+  "checkpoint_path": "checkpoints/depth_anything_v2_vits.pth",
+  "checkpoint_sha256": "715fade13be8f229f8a70cc02066f656f2423a59effd0579197bbf57860e1378",
+  "input_video_path": "data/videos/davis_rollercoaster.mp4",
+  "input_video_sha256": "7268cbecd9806a1e90a416de50dc02e50b4ae01428d5971837cf679dd0c87cb8",
+  "video": {
+    "fps": 24.0,
+    "reported_frame_count": 70,
+    "decoder": "FFMPEG",
+    "requested_frames": 1,
+    "height": 540,
+    "width": 960
+  },
+  "frame_indices": [
+    0
+  ],
+  "preprocessing": "Official Resize lower_bound, keep_aspect_ratio, multiples of 14, OpenCV cubic, BGR->RGB/255, ImageNet normalize, CHW float32; native-size output with bilinear align_corners=True",
+  "tf32_enabled": false,
+  "seed": 0,
+  "precision_policy": "fp32 weights; fp16 uses CUDA autocast when explicitly requested",
+  "xformers_available": false
+}

@@ -1,0 +1,8 @@
+# Tested direct dependencies for the frame-0 and 70-frame Depth Anything V2-Small runs.
+# Python 3.11.18. Install the appropriate PyTorch build first, as in README.md.
+numpy==2.4.6
+opencv-python==5.0.0.93
+matplotlib==3.11.2
+PyYAML==6.0.3
+torch==2.7.1
+torchvision==0.22.1

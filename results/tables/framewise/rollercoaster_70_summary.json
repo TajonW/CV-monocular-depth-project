@@ -1,0 +1,47 @@
+{
+  "run_name": "rollercoaster_70",
+  "model": "Depth Anything V2-Small",
+  "encoder": "vits",
+  "parameter_count": 24785089,
+  "device": "cuda",
+  "precision": "fp32",
+  "frames_processed": 70,
+  "first_frame_index": 0,
+  "last_frame_index": 69,
+  "course_100_frames_completed": false,
+  "original_resolution": [
+    540,
+    960
+  ],
+  "network_input_shapes": [
+    [
+      518,
+      924
+    ]
+  ],
+  "fps": 24.0,
+  "reported_video_frames": 70,
+  "mean_inference_ms": 54.85827142866973,
+  "mean_pipeline_ms": 79.03468571429195,
+  "model_load_s": 2.2286580999989383,
+  "warmup_runs": 1,
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "peak_allocated_mib": 413.5703125,
+    "peak_reserved_mib": 574.0
+  },
+  "normalization": {
+    "mode": "global_minmax_over_processed_frames",
+    "minimum": 0.0,
+    "maximum": 3.818237781524658,
+    "palette": "inferno",
+    "frame_count": 70,
+    "units": "relative; not meters",
+    "scope": "entire processed prefix",
+    "constant_map_policy": "map to palette minimum when maximum equals minimum"
+  },
+  "saved_video": "rgb_relative_depth.mp4",
+  "timing_scope": "Synchronized forward plus output resize; pipeline additionally includes official transforms, host/device copies. Excludes decoding, model load, warm-up, visualization and disk writes.",
+  "benchmark_note": "One measured inference per processed frame after warm-up",
+  "interpretation": "Relative predictions only; no metric scale, accuracy metric or temporal-quality claim"
+}

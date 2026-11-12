@@ -1,0 +1,47 @@
+{
+  "run_name": "first_frame",
+  "model": "Depth Anything V2-Small",
+  "encoder": "vits",
+  "parameter_count": 24785089,
+  "device": "cuda",
+  "precision": "fp32",
+  "frames_processed": 1,
+  "first_frame_index": 0,
+  "last_frame_index": 0,
+  "course_100_frames_completed": false,
+  "original_resolution": [
+    540,
+    960
+  ],
+  "network_input_shapes": [
+    [
+      518,
+      924
+    ]
+  ],
+  "fps": 24.0,
+  "reported_video_frames": 70,
+  "mean_inference_ms": 66.07230000008713,
+  "mean_pipeline_ms": 90.9350000001723,
+  "model_load_s": 2.251055200000337,
+  "warmup_runs": 1,
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "peak_allocated_mib": 413.5703125,
+    "peak_reserved_mib": 574.0
+  },
+  "normalization": {
+    "mode": "global_minmax_over_processed_frames",
+    "minimum": 0.0,
+    "maximum": 3.0426268577575684,
+    "palette": "inferno",
+    "frame_count": 1,
+    "units": "relative; not meters",
+    "scope": "first-frame validation only",
+    "constant_map_policy": "map to palette minimum when maximum equals minimum"
+  },
+  "saved_video": null,
+  "timing_scope": "Synchronized forward plus output resize; pipeline additionally includes official transforms, host/device copies. Excludes decoding, model load, warm-up, visualization and disk writes.",
+  "benchmark_note": "One-frame validation latency, not a stable performance benchmark",
+  "interpretation": "Relative predictions only; no metric scale, accuracy metric or temporal-quality claim"
+}

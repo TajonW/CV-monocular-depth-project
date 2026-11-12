@@ -1,0 +1,16 @@
+{
+  "baseline_mae_px": 2.0333417253132855,
+  "baseline_coverage": 0.7586493108271574,
+  "lr_mae_px": 1.5134580021094564,
+  "lr_coverage": 0.6371929265384512,
+  "pass_fraction_checkable": 0.9668162970253262,
+  "right_matcher_ms": 38.643006671918556,
+  "check_ms": 7.832839999658366,
+  "scene_count": 15,
+  "threshold_px": 1.0,
+  "sampling": "nearest pixel: floor(xR+0.5); continuous xR must lie in [0,W-1]",
+  "sign_convention": "dL=xL-xR; dR=xR-xL; residual=abs(dL+dR(xL-dL,y)); inclusive threshold",
+  "aggregation": "equal per-scene means; MAE before/after uses different valid-pixel subsets",
+  "interpretation": "geometric consistency only, not ground-truth correctness or an occlusion label",
+  "baseline_unchanged": true
+}

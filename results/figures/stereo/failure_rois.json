@@ -1,0 +1,23 @@
+{
+  "PianoL": {
+    "x0": 374,
+    "y0": 9,
+    "x1": 692,
+    "y1": 288,
+    "coordinate_convention": "same image-coordinate rectangle in each view; not correspondence aligned"
+  },
+  "Jadeplant": {
+    "x0": 197,
+    "y0": 19,
+    "x1": 579,
+    "y1": 303,
+    "coordinate_convention": "same image-coordinate rectangle in each view; not correspondence aligned"
+  },
+  "Pipes": {
+    "x0": 147,
+    "y0": 135,
+    "x1": 646,
+    "y1": 412,
+    "coordinate_convention": "same image-coordinate rectangle in each view; not correspondence aligned"
+  }
+}

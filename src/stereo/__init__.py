@@ -1,0 +1,1 @@
+"""Middlebury classical stereo baseline."""

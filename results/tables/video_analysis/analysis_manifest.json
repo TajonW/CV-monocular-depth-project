@@ -1,0 +1,114 @@
+{
+  "source_comparison_manifest_sha256": "5f981cd8b1d52175ecfdf59490b428b846c08cd7b9e30fab201ed737a2dfea76",
+  "all_original_input_hashes_still_match": true,
+  "script_sha256": "558052e4a905a16ff2f7a5ad66576ecf89d053c42b899083a66c2da9c7864235",
+  "helper_sha256": {
+    "src/video/visualization.py": "087f588eef07f3237914b243c15d78463e7965a37fd0bde8bfde4352e8f2b576",
+    "src/monocular/run_framewise.py": "c073d7bfce8392bcfbf994b16c2dcfcc258509521a288ccfd6c580aff7c8a204"
+  },
+  "cases": [
+    {
+      "name": "vehicle_34_39",
+      "frames": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "box": [
+        120,
+        85,
+        460,
+        245
+      ],
+      "display": [
+        340,
+        160
+      ]
+    },
+    {
+      "name": "fine_support_00_05",
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "box": [
+        330,
+        15,
+        600,
+        175
+      ],
+      "display": [
+        324,
+        192
+      ]
+    },
+    {
+      "name": "junction_54_59",
+      "frames": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "box": [
+        180,
+        160,
+        430,
+        350
+      ],
+      "display": [
+        300,
+        228
+      ]
+    },
+    {
+      "name": "tree_64_69",
+      "frames": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "box": [
+        460,
+        250,
+        640,
+        360
+      ],
+      "display": [
+        360,
+        220
+      ]
+    }
+  ],
+  "review_video": {
+    "path": "comparison_slow_4x.mp4",
+    "frames": 70,
+    "fps": 6.0,
+    "duration_s": 11.666666666666666,
+    "sha256": "d2285637d1319bd37b4ffd1320ae2435336de4588c2440412fa970395f82d178",
+    "playback_only": true
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "opencv-python": "5.0.0.93",
+    "matplotlib": "3.11.2",
+    "imageio": "2.38.1",
+    "imageio-ffmpeg": "0.8.1"
+  },
+  "inference_performed": false,
+  "prediction_arrays_modified": false,
+  "normalization": "Unchanged full-clip per-method ranges; no per-frame adjustment",
+  "temporal_diagnostic": "RGB-only pyramidal Lucas-Kanade tracking; not GT temporal error"
+}

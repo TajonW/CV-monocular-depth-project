@@ -1,6 +1,31 @@
-# Initial CPU stereo dependencies; versions will be locked after environment verification.
-# Model-specific dependencies and PyTorch are not included yet.
+# Part 1: Middlebury stereo and frame-wise Depth Anything V2 inference.
+# CUDA FP32 frame-wise inference is verified on the full available 70-frame clip.
+# Tested direct-dependency pins are also in requirements-framewise.txt.
+
+# Stereo matching, arrays, visualization, and experiment configuration.
 numpy
 opencv-python
 matplotlib
 PyYAML
+
+# Depth Anything V2 inference (official model code and weights are separate).
+# For this project's RTX 4070 Laptop / driver 560.94, install the CUDA 12.6
+# builds BEFORE installing this file (see the command in README.md).
+# Other machines should choose their own supported CPU/CUDA builds:
+# https://pytorch.org/get-started/previous-versions/#v271
+# No CUDA index or hardware-specific build is forced by this file.
+torch==2.7.1
+torchvision==0.22.1
+
+# Part 2: Video Depth Anything model imports and video export dependencies.
+# Imports, H.264 export and full available 70-frame offline FP16 inference are verified.
+einops==0.8.2
+easydict==1.14
+tqdm==4.70.1
+imageio==2.38.1
+imageio-ffmpeg==0.8.1
+
+# Gradio is only needed for the optional web demo.
+
+# Verified RGB-only UniDepthV2 ViT-S and full NYU test654 evaluation.
+-r requirements-metric.txt

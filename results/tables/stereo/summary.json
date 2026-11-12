@@ -1,0 +1,47 @@
+[
+  {
+    "run": "window3",
+    "block_size": 3,
+    "scene_count": 15,
+    "macro_mae_px": 1.8660755737659576,
+    "macro_coverage": 0.7510583322579805,
+    "macro_matcher_ms": 39.25748666667156,
+    "pooled_mae_px": 1.7421293117966976,
+    "pooled_coverage": 0.7559170171892342,
+    "gpu_used": false,
+    "peak_gpu_memory_mib": 0,
+    "timing": "Median of 3 matcher.compute calls after 1 warm-up by default; excludes I/O, grayscale, evaluation, visualization; CPU, one OpenCV thread.",
+    "timing_repeats": 3,
+    "warmup_runs": 1
+  },
+  {
+    "run": "baseline",
+    "block_size": 5,
+    "scene_count": 15,
+    "macro_mae_px": 2.0333417253132855,
+    "macro_coverage": 0.7586493108271574,
+    "macro_matcher_ms": 38.25212000000041,
+    "pooled_mae_px": 1.9060253777877403,
+    "pooled_coverage": 0.7633930148429681,
+    "gpu_used": false,
+    "peak_gpu_memory_mib": 0,
+    "timing": "Median of 3 matcher.compute calls after 1 warm-up by default; excludes I/O, grayscale, evaluation, visualization; CPU, one OpenCV thread.",
+    "timing_repeats": 3,
+    "warmup_runs": 1
+  },
+  {
+    "run": "window9",
+    "block_size": 9,
+    "scene_count": 15,
+    "macro_mae_px": 2.3884221242900248,
+    "macro_coverage": 0.767572081050323,
+    "macro_matcher_ms": 38.94563333334039,
+    "pooled_mae_px": 2.2485785970208894,
+    "pooled_coverage": 0.7717963981761924,
+    "gpu_used": false,
+    "peak_gpu_memory_mib": 0,
+    "timing": "Median of 3 matcher.compute calls after 1 warm-up by default; excludes I/O, grayscale, evaluation, visualization; CPU, one OpenCV thread.",
+    "timing_repeats": 3,
+    "warmup_runs": 1
+  }
+]

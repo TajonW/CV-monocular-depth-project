@@ -1,0 +1,19 @@
+{
+  "frame_index": 0,
+  "official_preprocessing_exact_match": true,
+  "official_prediction_allclose": true,
+  "max_absolute_prediction_difference": 0.0,
+  "saved_rgb_matches_decoded_frame": true,
+  "finite_fraction": 1.0,
+  "raw_dtype": "float32",
+  "shape": [
+    540,
+    960
+  ],
+  "fixed_normalization_reproduced": true,
+  "input_checkpoint_and_code_hashes_match": true,
+  "actual_decoded_video_frames": 70,
+  "requested_frames": 1,
+  "full_100_frame_experiment_completed": false,
+  "source_length_note": "The supplied clip has fewer than 100 frames"
+}

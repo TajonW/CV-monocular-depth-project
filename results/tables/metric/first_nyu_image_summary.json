@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "model": "UniDepthV2 ViT-S",
+  "parameter_count": 34184323,
+  "images_evaluated": 1,
+  "required_test_images": 654,
+  "full_test_completed": false,
+  "metrics": {
+    "absrel": 0.1195399639434738,
+    "rmse": 0.35889754743579566,
+    "delta1": 0.9963321596244131
+  },
+  "aggregation": "Equal arithmetic mean of per-image metrics",
+  "protocol": {
+    "crop": [
+      45,
+      471,
+      41,
+      601
+    ],
+    "min_depth": 0.001,
+    "max_depth": 10.0,
+    "gt_range": "strict inequalities",
+    "prediction_clipping": true,
+    "metrics": [
+      "absrel",
+      "rmse",
+      "delta1"
+    ],
+    "aggregation": "equal per-image mean",
+    "delta1_threshold": 1.25
+  },
+  "mean_inference_pipeline_ms": 33.131200001662364,
+  "median_inference_pipeline_ms": 33.131200001662364,
+  "timing_scope": "Synchronized tensor preparation + official infer(rgb), normalization/resize, GPU compute, native-size postprocess, and depth float32 CPU copy; excludes HDF5 IO, metrics, writes, model load, and warm-up",
+  "warmup_runs": 2,
+  "model_load_s": 6.492941799999244,
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "total_mib": 8187.5,
+    "peak_allocated_mib": 484.9580078125,
+    "peak_reserved_mib": 602.0
+  },
+  "network_shapes": [
+    [
+      490,
+      644
+    ]
+  ],
+  "raw_output_size": [
+    480,
+    640
+  ],
+  "raw_units": "meters",
+  "precision": "Unmodified official infer CUDA FP16 autocast, FP32 weights; float32 raw depths saved in meters",
+  "all_predictions_finite": true,
+  "test_scale_alignment": false,
+  "total_pred_clipped_low": 0,
+  "total_pred_clipped_high": 0,
+  "interpretation": "Course-protocol local baseline, not a claim to reproduce a paper table exactly"
+}

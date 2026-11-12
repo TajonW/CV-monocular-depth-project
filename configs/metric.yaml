@@ -1,0 +1,9 @@
+dataset: data/nyu/nyu_depth_v2_labeled.mat
+splits: data/nyu/splits.mat
+repository: external/UniDepth-source
+checkpoint: checkpoints/unidepth-v2-vits14
+output_dir: outputs/metric
+warmup_runs: 2
+opencv_threads: 1
+# Use official infer(rgb), no GT camera, no test-time scale fitting.
+# Preserve official shape bounds and native infer FP16 autocast.

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "images_verified": 1,
+  "full_654_test_verified": false,
+  "all_official_test_indices_in_order": true,
+  "raw_prediction_pixels_checked": 307200,
+  "valid_gt_pixels_checked": 238560,
+  "hashes_and_source_snapshots_match": true,
+  "all_predictions_float32_and_finite": true,
+  "independent_metrics_match_every_csv_row": true,
+  "equal_per_image_average_matches_summary": true,
+  "no_test_scale_alignment": true,
+  "recomputed_metrics": {
+    "absrel": 0.1195399639434738,
+    "rmse": 0.35889754743579566,
+    "delta1": 0.9963321596244131
+  }
+}

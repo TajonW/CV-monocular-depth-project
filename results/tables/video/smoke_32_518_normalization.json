@@ -1,0 +1,10 @@
+{
+  "palette": "inferno",
+  "minimum": 0.0,
+  "maximum": 6.341373443603516,
+  "frame_count": 32,
+  "scope": "entire processed prefix",
+  "mode": "global_minmax",
+  "units": "relative; not meters",
+  "lookup": "official floor(normalized * 255) into 256-color table"
+}

@@ -1,0 +1,28 @@
+{
+  "fixed_test_orders": [
+    0
+  ],
+  "high_absrel_cases": [
+    {
+      "test_order": 0,
+      "zero_based_index": 0,
+      "matlab_index": 1,
+      "prediction_path": "predictions\\000000.npy",
+      "absrel": 0.1195399639434738,
+      "rmse": 0.35889754743579566,
+      "delta1": 0.9963321596244131,
+      "valid_pixels": 238560,
+      "pred_clipped_low": 0,
+      "pred_clipped_high": 0,
+      "inference_pipeline_ms": 33.131200001662364,
+      "network_height": 490,
+      "network_width": 644,
+      "returned_dtype": "torch.float32",
+      "raw_min": 1.9834591150283813,
+      "raw_max": 3.9980032444000244,
+      "finite_fraction": 1.0,
+      "nonpositive_pixels": 0
+    }
+  ],
+  "selection_note": "Post-evaluation illustration only; no parameter selection/tuning"
+}

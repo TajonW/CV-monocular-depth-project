@@ -1,0 +1,2 @@
+test_order,zero_based_index,matlab_index,prediction_path,absrel,rmse,delta1,valid_pixels,pred_clipped_low,pred_clipped_high,inference_pipeline_ms,network_height,network_width,returned_dtype,raw_min,raw_max,finite_fraction,nonpositive_pixels
+0,0,1,predictions\000000.npy,0.1195399639434738,0.35889754743579566,0.9963321596244131,238560,0,0,33.131200001662364,490,644,torch.float32,1.9834591150283813,3.9980032444000244,1.0,0

@@ -1,8 +1,9 @@
 # Source code
 
-Implement project code in the module folders below. No inference or evaluation
-runner has been implemented yet. Keep absolute machine-specific paths out of
-source files; read paths from configurations or command-line arguments.
+Stereo, frame-wise depth, offline video depth, three-column comparison and
+NYU metric-model evaluation are implemented and verified. Improvement and
+application folders contain implementation notes. Keep absolute machine-specific
+paths out of source files; read paths from configurations or CLI arguments.
 
 - `stereo`: Middlebury stereo matching, metric conversion, and evaluation.
 - `monocular`: independent Depth Anything V2-Small frame predictions.

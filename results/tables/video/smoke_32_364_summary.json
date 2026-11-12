@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "model": "Video Depth Anything-Small",
+  "mode": "offline relative depth",
+  "precision": "fp16 autocast",
+  "parameter_count": 29035137,
+  "frames_processed": 32,
+  "frame_indices": [
+    0,
+    31
+  ],
+  "fps": 24.0,
+  "duration_s": 1.3333333333333333,
+  "raw_shape": [
+    32,
+    360,
+    640
+  ],
+  "raw_dtype": "float32",
+  "original_resolution": [
+    540,
+    960
+  ],
+  "read_resolution": [
+    360,
+    640
+  ],
+  "input_size": 364,
+  "max_res": 640,
+  "windows": [
+    {
+      "input_shape": [
+        1,
+        32,
+        3,
+        364,
+        644
+      ],
+      "input_dtype": "torch.float32",
+      "forward_ms": 959.6847000011621,
+      "output_dtype": "torch.float32"
+    },
+    {
+      "input_shape": [
+        1,
+        32,
+        3,
+        364,
+        644
+      ],
+      "input_dtype": "torch.float32",
+      "forward_ms": 601.2630999994144,
+      "output_dtype": "torch.float32"
+    }
+  ],
+  "official_internal_tail_padding": 22,
+  "padding_note": "Official window-context padding only; returned output contains exactly the real requested prefix",
+  "pipeline_total_ms": 2232.3994999987917,
+  "amortized_pipeline_ms_per_real_frame": 69.76248437496224,
+  "timing_scope": "Synchronized full official infer_video_depth: preprocessing, transfers, forwards, output resize, window alignment. Excludes decode, model load, visualization and file writes.",
+  "warmup_runs": 0,
+  "benchmark_note": "Cold short-clip smoke test, not a steady-state speed benchmark",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "peak_allocated_mib": 2385.35498046875,
+    "peak_reserved_mib": 3162.0
+  },
+  "all_predictions_finite": true,
+  "all_source_rgb_match_in_order": true,
+  "raw_npz_exact_roundtrip": true,
+  "normalization": {
+    "palette": "inferno",
+    "minimum": 0.0,
+    "maximum": 5.553757190704346,
+    "frame_count": 32,
+    "scope": "entire processed prefix",
+    "mode": "global_minmax",
+    "units": "relative; not meters",
+    "lookup": "official floor(normalized * 255) into 256-color table"
+  },
+  "videos": {
+    "relative_depth.mp4": {
+      "frames": 32,
+      "fps": 24.0,
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "9083facce4ade3f5193c1ebc98d786c2420d601443f7fbe12fec1913040a42d0"
+    },
+    "rgb_relative_depth.mp4": {
+      "frames": 32,
+      "fps": 24.0,
+      "size": [
+        408,
+        1292
+      ],
+      "sha256": "28be071c206ce1d13c7d712860ad589abc9d503241d4288442e350a7bdd643f2"
+    }
+  },
+  "course_100_frames_completed": false,
+  "scope": "Prefix GPU smoke test; no full-video quality or metric-accuracy conclusion"
+}

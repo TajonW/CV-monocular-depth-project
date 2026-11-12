@@ -1,0 +1,10 @@
+{
+  "mode": "global_minmax_over_processed_frames",
+  "minimum": 0.0,
+  "maximum": 3.0426268577575684,
+  "palette": "inferno",
+  "frame_count": 1,
+  "units": "relative; not meters",
+  "scope": "first-frame validation only",
+  "constant_map_policy": "map to palette minimum when maximum equals minimum"
+}

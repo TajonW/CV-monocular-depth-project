@@ -1,0 +1,8 @@
+{
+  "scene_count": 15,
+  "independent_scalar_samples": 7500,
+  "baseline_hashes_unchanged": true,
+  "saved_metrics_reproduced": true,
+  "diagnostic_source_hashes_match": true,
+  "unit_tests_passed": 8
+}

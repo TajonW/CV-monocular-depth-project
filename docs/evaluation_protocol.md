@@ -9,7 +9,7 @@ the local `docs/assignment/` folder for the authoritative requirements.
 - Keep the native image size and corresponding calibration.
 - Convert OpenCV fixed-point disparity to pixels by dividing by 16.
 - Ground-truth validity: finite disparity strictly greater than zero.
-- Proposed prediction validity: finite disparity with raw OpenCV disparity
+- Implemented prediction validity: finite disparity with raw OpenCV disparity
   strictly greater than `(minDisparity - 1) * 16`.
 - Compute MAE on the intersection of valid ground truth and valid predictions.
 - Coverage is the number of pixels in that intersection divided by the number
@@ -17,7 +17,16 @@ the local `docs/assignment/` folder for the authoritative requirements.
 - Exclude invalid predictions and nonpositive denominators from depth conversion.
 - Report per-scene metrics. For the summary, use equal scene averaging and label
   it explicitly. This aggregation choice is a project convention.
-- Left-right consistency is optional.
+- Left-right consistency is optional and implemented as a separate diagnostic.
+  The baseline files and mandatory metric definitions remain unchanged. See
+  `docs/left_right_diagnostic.md` for signed right matching, nearest sampling,
+  uncheckable states, and the accuracy/coverage interpretation.
+- PFM values are already pixel disparities. Decode byte order from the sign of
+  its header value and flip bottom-up rows; do not rescale by its magnitude.
+- Do not use calibration vmin/vmax to choose the search range; they derive from
+  truth. This implementation uses the permitted conservative ndisp bound only.
+- mask0nocc.png is not applied to mandatory metrics. Evaluation includes all
+  finite positive GT disparities, rather than only nonoccluded pixels.
 
 ## NYU metric depth
 

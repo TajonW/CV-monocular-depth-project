@@ -1,0 +1,2 @@
+# Used only to regenerate the PDF, not needed for stereo inference.
+reportlab==4.4.9

@@ -17,6 +17,9 @@ tmp/
 outputs/
 runs/
 
+# Local generated stage reports; final report sources remain in report/.
+/report/stereo/
+
 # Python 环境与缓存
 .venv/
 venv/

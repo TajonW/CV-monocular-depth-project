@@ -1,0 +1,70 @@
+{
+  "fixed_test_orders": [
+    0,
+    327,
+    653
+  ],
+  "high_absrel_cases": [
+    {
+      "test_order": 184,
+      "zero_based_index": 468,
+      "matlab_index": 469,
+      "prediction_path": "predictions\\000468.npy",
+      "absrel": 0.5629092710450729,
+      "rmse": 1.428910039049642,
+      "delta1": 0.08046193829644534,
+      "valid_pixels": 238560,
+      "pred_clipped_low": 0,
+      "pred_clipped_high": 0,
+      "inference_pipeline_ms": 25.382200001331512,
+      "network_height": 490,
+      "network_width": 644,
+      "returned_dtype": "torch.float32",
+      "raw_min": 1.8932019472122192,
+      "raw_max": 6.943087577819824,
+      "finite_fraction": 1.0,
+      "nonpositive_pixels": 0
+    },
+    {
+      "test_order": 42,
+      "zero_based_index": 87,
+      "matlab_index": 88,
+      "prediction_path": "predictions\\000087.npy",
+      "absrel": 0.39906752475203244,
+      "rmse": 1.7271135456308504,
+      "delta1": 0.2918133802816901,
+      "valid_pixels": 238560,
+      "pred_clipped_low": 0,
+      "pred_clipped_high": 51224,
+      "inference_pipeline_ms": 24.617300001409603,
+      "network_height": 490,
+      "network_width": 644,
+      "returned_dtype": "torch.float32",
+      "raw_min": 1.355204701423645,
+      "raw_max": 14.325953483581543,
+      "finite_fraction": 1.0,
+      "nonpositive_pixels": 0
+    },
+    {
+      "test_order": 201,
+      "zero_based_index": 516,
+      "matlab_index": 517,
+      "prediction_path": "predictions\\000516.npy",
+      "absrel": 0.38099018009546776,
+      "rmse": 0.7638934775904261,
+      "delta1": 0.581161971830986,
+      "valid_pixels": 238560,
+      "pred_clipped_low": 0,
+      "pred_clipped_high": 0,
+      "inference_pipeline_ms": 26.895899998635286,
+      "network_height": 490,
+      "network_width": 644,
+      "returned_dtype": "torch.float32",
+      "raw_min": 1.303385615348816,
+      "raw_max": 3.5792105197906494,
+      "finite_fraction": 1.0,
+      "nonpositive_pixels": 0
+    }
+  ],
+  "selection_note": "Post-evaluation illustration only; no parameter selection/tuning"
+}

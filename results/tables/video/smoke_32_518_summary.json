@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "model": "Video Depth Anything-Small",
+  "mode": "offline relative depth",
+  "precision": "fp16 autocast",
+  "parameter_count": 29035137,
+  "frames_processed": 32,
+  "frame_indices": [
+    0,
+    31
+  ],
+  "fps": 24.0,
+  "duration_s": 1.3333333333333333,
+  "raw_shape": [
+    32,
+    360,
+    640
+  ],
+  "raw_dtype": "float32",
+  "original_resolution": [
+    540,
+    960
+  ],
+  "read_resolution": [
+    360,
+    640
+  ],
+  "input_size": 518,
+  "max_res": 640,
+  "windows": [],
+  "official_internal_tail_padding": 22,
+  "padding_note": "Official window-context padding only; returned output contains exactly the real requested prefix",
+  "pipeline_total_ms": 33564.40570000086,
+  "amortized_pipeline_ms_per_real_frame": 1048.887678125027,
+  "timing_scope": "Synchronized full official infer_video_depth: preprocessing, transfers, forwards, output resize, window alignment. Excludes decode, model load, visualization and file writes.",
+  "warmup_runs": 0,
+  "benchmark_note": "Cold short-clip smoke test, not a steady-state speed benchmark",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "peak_allocated_mib": 8014.21923828125,
+    "peak_reserved_mib": 11858.0
+  },
+  "all_predictions_finite": true,
+  "all_source_rgb_match_in_order": true,
+  "raw_npz_exact_roundtrip": true,
+  "normalization": {
+    "palette": "inferno",
+    "minimum": 0.0,
+    "maximum": 6.341373443603516,
+    "frame_count": 32,
+    "scope": "entire processed prefix",
+    "mode": "global_minmax",
+    "units": "relative; not meters",
+    "lookup": "official floor(normalized * 255) into 256-color table"
+  },
+  "videos": {
+    "relative_depth.mp4": {
+      "frames": 32,
+      "fps": 24.0,
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "1473724e66c65400746497095a01a838be425b4ac602a4e548a77f2bf0b37f99"
+    },
+    "rgb_relative_depth.mp4": {
+      "frames": 32,
+      "fps": 24.0,
+      "size": [
+        408,
+        1292
+      ],
+      "sha256": "d07d8e8a3a080c9515c4659b47c0af3622a32fabb973032d7f2740311b4e25df"
+    }
+  },
+  "course_100_frames_completed": false,
+  "scope": "Prefix GPU smoke test; no full-video quality or metric-accuracy conclusion"
+}

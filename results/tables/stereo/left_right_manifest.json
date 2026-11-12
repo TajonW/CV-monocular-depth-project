@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-11-08T15:05:46.856935+08:00",
+  "command": [
+    "D:\\Course\\CV_Project\\src\\stereo\\diagnose_left_right.py"
+  ],
+  "source_run": "outputs\\stereo\\baseline",
+  "opencv": "5.0.0",
+  "numpy": "2.4.6",
+  "threshold_px": 1.0,
+  "status_codes": {
+    "0": "Left invalid",
+    "1": "Out of bounds",
+    "2": "Right invalid",
+    "3": "Inconsistent",
+    "4": "Consistent"
+  },
+  "source_prediction_sha256": {
+    "Adirondack": "647bb9dd92d97567c33de721f6d912ae27ea886d17b0199e21920780f79235c7",
+    "ArtL": "0d31d8a76c7f6d0f75fab0a6ba05dab71a88b41645a5ee36cbb43d7b763809c7",
+    "Jadeplant": "c357a8e06e75aef35ee573b2dfc1fc1e2fed23a47c1914434a46cab7d20f735b",
+    "Motorcycle": "dbc0470e1ec10b34f3c07b6396417ae646a2f3101de466cb7ca56cdf79ae04fc",
+    "MotorcycleE": "71c6cc8099a59ca9f4daabbba2019ef8accbd5cc24bbf33da3d8dd238b2a4dd1",
+    "Piano": "28f3b92dce15a7f608660e612d142b3d4d051166cc1e2c2b42bb908f1aaa5bd5",
+    "PianoL": "2832a32bc4f7decf704c787759175b5282e3e5635e449022255d7bf0585973cc",
+    "Pipes": "7a42021974491d0bbe1a88cb9f7310207c48afc6c13d746cb217a0bb0f4c29af",
+    "Playroom": "b68a73e11c03f3dd273f7d8409fac8bfe5ca865515ac9de35a091e8fe743dab8",
+    "Playtable": "7a86ef842c8c16ea2cba81aed7f733659d12d4f868678f6bd8dee15431ee9202",
+    "PlaytableP": "93e8d254cdd4135bc4a73719ef3f00f8ee9f02701198d94638c1d8accb541e5b",
+    "Recycle": "715ad0a05d445ca63ee68342c3796decf3802f92f880f959d9abad858b37438e",
+    "Shelves": "f22e9ddc443e56de7e0268e84cf72f11cd5c20fff5eb7034800b508731537310",
+    "Teddy": "bb962d8a6fee6713ffb46d53af482e4adc7ab5aee64dfd074c949ddb760025c6",
+    "Vintage": "abda892b5d2cfce93a67ce2acb7b0e919718cbdfe6587a7b91ec85b8b59435b3"
+  },
+  "source_manifest_sha256": "370235c6f8f639eb1d1ba15fa4f370e69138ad895077203d560c4597a52daabe",
+  "code_sha256": {
+    "src/stereo/left_right.py": "8b82277bd2e9f40f4de5cbe9185af7eb3e58bc055cf3aa0f281bed46deb570fb",
+    "src/stereo/diagnose_left_right.py": "77bc8c5367c4998d221051715414209dae172423a1218152200084803ff4fd51"
+  }
+}
