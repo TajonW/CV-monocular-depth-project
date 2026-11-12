@@ -9,8 +9,9 @@ the local `docs/assignment/` folder for the authoritative requirements.
 - Keep the native image size and corresponding calibration.
 - Convert OpenCV fixed-point disparity to pixels by dividing by 16.
 - Ground-truth validity: finite disparity strictly greater than zero.
-- Proposed prediction validity: finite disparity with raw OpenCV disparity
-  strictly greater than `(minDisparity - 1) * 16`.
+- Prediction validity: finite disparity with raw OpenCV disparity strictly
+  greater than `(minDisparity - 1) * 16`. Include non-sentinel zero disparity
+  in the formal run. The legacy reproduction additionally requires `d > 0`.
 - Compute MAE on the intersection of valid ground truth and valid predictions.
 - Coverage is the number of pixels in that intersection divided by the number
   of valid ground-truth pixels. Report both MAE and coverage.
@@ -36,7 +37,13 @@ the local `docs/assignment/` folder for the authoritative requirements.
 
 ## Video
 
-- Use the first 100 frames of davis_rollercoaster.mp4 at the original frame rate.
+- The assignment requests the first 100 frames of davis_rollercoaster.mp4 at
+  the original frame rate. The official linked file verified on 2026-11-11
+  contains 70 frames (960 x 540, 24 fps). The user approved processing all 70
+  distinct source frames, indexed 0..69, and documenting this discrepancy.
+  The optional 195-frame clip is outside this evaluation scope. For Part 2,
+  reuse the same source file, frame indices 0..69 and 24 fps. Verify the video
+  SHA-256 against the value in `scripts/prepare_framewise.py`.
 - Compare Depth Anything V2-Small and Video Depth Anything-Small relative depth.
 - Use the same palette and a fixed normalization per method over the full clip.
 - Reuse the unchanged method's normalization for its own improvement.

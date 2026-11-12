@@ -1,8 +1,9 @@
 # Source code
 
-Implement project code in the module folders below. No inference or evaluation
-runner has been implemented yet. Keep absolute machine-specific paths out of
-source files; read paths from configurations or command-line arguments.
+The stereo baseline is implemented in `stereo/run_stereo.py`, and frame-wise
+relative depth in `monocular/run_framewise.py`. The remaining directories
+describe planned modules. Read machine-specific paths from configuration or
+command-line arguments.
 
 - `stereo`: Middlebury stereo matching, metric conversion, and evaluation.
 - `monocular`: independent Depth Anything V2-Small frame predictions.
