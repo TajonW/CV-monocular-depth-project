@@ -128,8 +128,7 @@ are in the [experiment log](docs/experiment_log.md).
 
 The entry point uses Depth Anything V2-Small, with the official preprocessing,
 native-resolution float32 predictions and one visualization range over a run.
-The official clip has 70 frames at 24 fps. Processing all 70 frames was approved
-after verifying the difference from the assignment's 100-frame request.
+The assignment specifies the first 100 frames. The linked clip contains 70 frames, so we processed all 70 available frames (0–69) at the original 24 fps.
 
 ```powershell
 conda activate cvproject3
