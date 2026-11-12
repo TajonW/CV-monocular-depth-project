@@ -27,7 +27,7 @@ the local `docs/assignment/` folder for the authoritative requirements.
 - With h5py: RGB is images[i].transpose(2, 1, 0); filled metric depth is depths[i].T.
 - Use filled depths, not rawDepths; keep floating-point values in meters.
 - Resize predictions to height 480, width 640.
-- Evaluate crop [45:471, 41:601] at valid ground-truth depths between 0.001 and 10 m.
+- Evaluate crop `[45:471, 41:601]` at pixels with finite ground-truth depths in the inclusive range `[0.001, 10]` m.
 - Clip predictions to [0.001, 10] m. Diagnose nonfinite predictions explicitly;
   do not silently remove hard pixels based on prediction quality.
 - Report AbsRel, RMSE, and delta1 (max(pred/gt, gt/pred) < 1.25).

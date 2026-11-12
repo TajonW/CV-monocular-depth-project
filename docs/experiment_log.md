@@ -120,6 +120,63 @@
   provides pinned installation and GPU/Colab handoff commands.
 - GPU/Colab execution and a 100-distinct-frame run remain unexecuted.
 
+## 2026-11-12 — NYU Depth V2 UniDepthV2 ViT-S (CPU)
+
+- Branch `part2/nyu-metric-depth` starts from the unmerged Part 1 tip
+  `0fe1fde4ae88dcc999683423149cafa524f4c765`.
+- NYU labeled MAT SHA-256 is `2d724b0c0ab358aa1ce5df855e5bd14a2279ab7202efe22f32a30d612dcb86aa`. The official download
+  was slow, so the original MAT was recovered from the pinned mirror.
+  Full size and mirror SHA-256 passed. The first MiB and three 4 KiB
+  samples from the middle and tail matched the NYU server. The official
+  split SHA-256 is `6e081404491a8bfba2f066beaa9713ef6046f9007aa5f799f2a350506a580cee`.
+- The split contains 795 development and 654 test images with no overlap.
+  MATLAB indices were converted to zero-based Python indices. The HDF5
+  loader reads one image and filled-depth map at a time. Three development
+  previews (indices 2, 10 and 23) were visually checked for RGB/depth
+  orientation and crop alignment.
+- Official UniDepthV2 ViT-S revision `038c238f06c87b6c2f5b3749fd51fbf442b1f218` uses
+  upstream code `8d8cfe4c7ee15297099983607febf0d4f32eb3d6`. The configuration and
+  safetensors checksums are recorded in each `run.json`. The model receives
+  only RGB, uses the official default preprocessing, and runs in float32
+  on an i5-1135G7 CPU with four PyTorch threads. The independent
+  `.venv/nyu-metric` environment uses Python 3.10.22,
+  torch 2.6.0+cpu, torchvision 0.21.0+cpu
+  and h5py 3.14.0.
+- The 15-image development pilot took 63.44 s including
+  load and warm-up. Warmed inference averaged 2.6248
+  s/image with a 2.5737 s median. Peak process
+  working set was 899.2 MiB and minimum sampled
+  system available memory was 3443.9 MiB.
+  End-to-end per-image timing estimated 29.3
+  min for 654 images, excluding setup. All 15 saved predictions and
+  metrics passed independent recomputation. These are development checks.
+- The formal run completed **654/654** images in **32.62
+  min** from model loading through prediction writes. Warmed inference
+  averaged **2.8982 s/image**, median
+  **2.9188 s/image**. Peak process working
+  set was **900.4 MiB**, with minimum sampled
+  available system memory of **3231.3 MiB**.
+  The per-image timer includes HDF5 read, inference, metrics and prediction
+  writes. The inference-only timer covers tensor conversion, official
+  inference, validation and any resize. One dev RGB warm-up is timed separately.
+- Formal equal-weight means are **AbsRel 0.114609**,
+  **RMSE 0.398949 m**, and **δ1 0.892103**.
+  The protocol uses 480 × 640 predictions, crop `[45:471, 41:601]`,
+  finite ground truth in `[0.001, 10]` m, and prediction clipping to the
+  same value bounds. Test labels are used for scoring only, with no
+  scale alignment. All 654 saved predictions were validated, and independently
+  recomputed metrics matched the CSV and final aggregates.
+- An exact float32 comparison in crop `[45:471, 41:601]` across all 654
+  test images found zero pixels and zero images at each endpoint,
+  `0.001 m` and `10 m`. The inclusive and exclusive ranges produce the
+  same ground-truth masks, so the reported metrics are unchanged.
+- Full results are local under `outputs/nyu/unidepth_v2_vits14_test654/`. The
+  `per_image.csv`, `run.json`, `acceptance.json` and full-size float32
+  `predictions/` retain original predictions before cropping and value
+  clipping for Part 3. The development run is under `outputs/nyu/unidepth_v2_vits14_dev15/`.
+  Use the [NYU guide](../src/metric/README.md) for setup and reproduction.
+
+
 Copy this template for each experiment:
 
 ```text
