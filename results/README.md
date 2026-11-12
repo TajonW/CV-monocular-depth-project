@@ -23,3 +23,17 @@ CPU inference averaged 4.742 s/frame with a median of 3.009 s/frame, including
 the recorded 114.008 s timing at frame 28. The full MP4, raw float32 predictions
 and run metadata are under `outputs/framewise/dav2_small_70/`.
 See the [experiment log](../docs/experiment_log.md) for timing and validation.
+
+## NYU metric depth
+
+UniDepthV2 ViT-S used RGB-only CPU inference on all 654 official NYU Depth V2
+test images. The table reports equal-weight means across images.
+
+| Images | AbsRel | RMSE (m) | δ1 |
+| ---: | ---: | ---: | ---: |
+| 654 | 0.114609 | 0.398949 | 89.2103% |
+
+The evaluation uses finite ground truth in `[0.001, 10]` m within the course
+crop. Full predictions and per-image scores are under
+`outputs/nyu/unidepth_v2_vits14_test654/`. See the
+[experiment log](../docs/experiment_log.md) for protocol and verification.

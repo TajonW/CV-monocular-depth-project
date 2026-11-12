@@ -85,9 +85,10 @@ The script checks that all 15 scenes have the four required files.
 
 ### NYU Depth V2
 
-The labeled file is stored at `data/nyu/nyu_depth_v2_labeled.mat`.
-The official `splits.mat` must still be downloaded into `data/nyu/`.
-Use the assignment's 795 development / 654 test split.
+Place `nyu_depth_v2_labeled.mat` and official `splits.mat` under `data/nyu/`.
+Use the assignment's 795 development / 654 test split. The
+[NYU metric baseline guide](src/metric/README.md) records data sources, hashes,
+the independent CPU environment and reproduction commands.
 
 ### Video and Model Weights
 
@@ -165,6 +166,14 @@ and [experiment log](docs/experiment_log.md).
 For Part 2 video comparison, reuse the verified source clip and the same
 frame indices `0–69` at 24 fps. See the
 [evaluation protocol](docs/evaluation_protocol.md).
+
+The NYU UniDepthV2 ViT-S formal test covers all **654** official test images.
+Equal-weight per-image means are **AbsRel 0.1146**,
+**RMSE 0.3989 m** and **δ1 89.21%**.
+The run used RGB-only CPU inference under the course crop and depth limits.
+Full predictions and metrics are local under `outputs/nyu/unidepth_v2_vits14_test654/`.
+See the [NYU guide](src/metric/README.md) and
+[experiment log](docs/experiment_log.md) for reproducibility.
 
 ## Submission
 
